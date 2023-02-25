@@ -1,0 +1,478 @@
+:root {
+	--red: #E50914;
+	--back: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--back);
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.cont {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .cont {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .log {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--red);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.act {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Pelicula Principal ----- ----- ----- */
+.pel-prin {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%),
+	url(../_img/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pel-prin .cont {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pel-prin .tit {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pel-prin .desc {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pel-prin .bot {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pel-prin .bot:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pel-prin .bot i {
+	margin-right: 1.25em;
+}
+.reg{
+	font-weight: bold;
+	color: #911e26;
+}
+
+/* ---- ----- ----- contenedor titulo y controles ----- ----- ----- */
+
+.cont-tit-contt h2{
+	visibility: hidden;
+}
+.cont-tit-contt{
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+.cont-tit-contt h3 {
+	color: #FFF;
+	font-size: 30px;
+	padding-left: 15px;
+}
+.cont-tit-contt .ind .glider-dot{
+	display: block;
+	width: 20px;
+	height: 3px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+.cont-tit-contt .ind .glider-dot:hover{
+	opacity: .51;
+}
+.cont-tit-contt .ind .glider-dot.active{
+	background-color: #E50914;
+	opacity: .5;
+}
+.ind2 .glider-dot{
+	display: block;
+	width: 20px;
+	height: 3px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+.ind2 .glider-dot:hover{
+	opacity: .51;
+}
+.ind3 .glider-dot.active{
+	background-color: #E50914;
+	opacity: .5;
+}
+.ind3 .glider-dot{
+	display: block;
+	width: 20px;
+	height: 3px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+.ind3 .glider-dot:hover{
+	opacity: .51;
+}
+.ind3 .glider-dot.active{
+	background-color: #E50914;
+	opacity: .5;
+}
+
+
+
+/* ---- ----- ----- contenedor principal flechas ----- ----- ----- */
+.pel-reco{
+	margin-bottom: 70px;
+}
+
+.pel-reco .cont-prin{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.pel-reco .cont-prin .flec-lef,
+.pel-reco .cont-prin .flec-rig{
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #FFF;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+.pel-reco .cont-prin .flec-lef:hover,
+.pel-reco .cont-prin .flec-rig:hover{
+	background: rgba(0,0,0, .9);
+}
+
+.pel-reco .cont-prin .flec-lef{
+	left: 0;
+}
+.pel-reco .cont-prin .flec-rig{
+	right: 0;
+}
+
+
+
+
+.cont-prin2{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.cont-prin2 .flec-lef2,
+.cont-prin2 .flec-rig2{
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #FFF;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+.cont-prin2 .flec-lef2:hover,
+.cont-prin2 .flec-rig2:hover{
+	background: rgba(0,0,0, .9);
+}
+.cont-prin2 .flec-lef2{
+	left: 0;
+}
+.cont-prin2 .flec-rig2{
+	right: 0;
+}
+.cont-prin3{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.cont-prin3 .flec-lef3,
+.cont-prin3 .flec-rig3{
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #FFF;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+.cont-prin3 .flec-lef3:hover,
+.cont-prin3 .flec-rig3:hover{
+	background: rgba(0,0,0, .9);
+}
+.cont-prin3 .flec-lef3{
+	left: 0;
+}
+.cont-prin3 .flec-rig3{
+	right: 0;
+}
+
+
+/* ---- ----- ----- Carrucel ----- ----- ----- */
+.pel-reco .cont-carr{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.pel-reco .cont-carr .carr{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.pel-reco .cont-carr .carr .pel{
+	transition: .2s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	margin: 10px;
+}
+.pel-reco .cont-carr .carr .pel:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+.pel-reco .cont-carr .carr .pel img{
+	width: 100%;
+	vertical-align: top;
+}
+.pel {
+	cursor: pointer;
+}
+
+
+.cont-carr2{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.cont-carr2 .carr2{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.cont-carr2 .carr2 .pel2{
+	transition: .2s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	margin: 10px;
+}
+.cont-carr2 .carr2 .pel2:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+.cont-carr2 .carr2 .pel2 img{
+	width: 100%;
+	vertical-align: top;
+}
+.cont-carr3{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.cont-carr3 .carr3{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.cont-carr3 .carr3 .pel3{
+	transition: .2s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	margin: 10px;
+}
+.cont-carr3 .carr3 .pel3:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+.cont-carr3 .carr3 .pel3 img{
+	width: 100%;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+header .log {
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+header .cont {
+	flex-direction: column;
+	text-align: center;
+}
+
+.pel-prin {
+	font-size: 14px;
+}
+
+.pel-prin .desc {
+	max-width: 100%;
+}
+
+.pel-reco .cont-carr .carr{
+	overflow: hidden;
+}
+}
+
+
+
+
+
+
+
+
+.form{
+    width: 480px;
+    max-width: 100%;
+    margin: auto;
+    font-weight: bolder;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 10px rgb(121, 26, 26);
+    position: relative;
+}
+
+.form_title{
+    text-align: center;
+    margin-top: 0;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+}
+
+.form_input, .form_label, .form_submit{
+    display: flex;
+	flex-direction: column;
+    width: 95%;
+    font-size: 1.3em;
+	color: #fff;
+}
+
+.form_input{
+    padding: 20px;
+    background: transparent;
+    border: 1px solid rgb(243, 243, 243);
+    margin-bottom: 40px;
+}
+.form_input:focus{
+    outline: 1px solid rgb(240, 238, 238);
+
+}
+.form_input:focus + .form_label{
+    margin-top: -135px;
+}
+
+.form_label{
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -88px;
+    z-index: -20;
+    transition: all 0.2s;
+}
+
+.pin_up{
+    margin-top: -135px;
+}
+
+.right_content{
+    text-align: right;
+    margin-top: -20px;
+	margin-right: 30px;
+}
+
+.col{
+	color: #FFF;
+}
+
+.button{
+    background-color: transparent;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+    -.5rem -.5rem 1rem #fff
+}
+
+.button:hover{
+    box-shadow: .5rem .5rem 1rem #fff,
+    -.5rem -.5rem 1rem #ccc
+
+}
+
+.button:active{
+    box-shadow: inset .2rem .2rem 1rem #fff,
+    inset -.2rem -.2rem 1rem #ccc
+
+}

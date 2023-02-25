@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+	<link rel="stylesheet" href="../_css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="../_img/icono.ico">
+	<title>PelXMax</title>
+</head>
+<body oncopy="return false" onpaste="return false">
+	<header>
+		<div class="cont">
+			<h2 class="log">PelXMax</h2>
+			<nav>
+				<a href="../index.html">Inicio</a>
+				<a href="../_html/reg.html" class="act">Registrate</a>
+			</nav>
+		</div>
+	</header>
+    <section>
+        <form class="form">
+            <h1 class="form_title">Registrate</h1><br><br>
+                <input type="name" class="form_input" required autofocus maxlength="35" pattern="[a-zA-Z0-9 ]{2,35}"><label for="" class="form_label">Ingresa tu Nombre</label>
+                <input type="password" class="form_input" required maxlength="15" pattern="(?=.*\d)(?=.*[a-z0-9 ])(?=.*[A-Z0-9 ]){8,15}" title="Incluya 1Mayuscula 1Numero 1Caracterespecial" ><label for="" class="form_label">Digita una Contraseña</label>
+                <input type="password" class="form_input" required maxlength="15" pattern="(?=.*\d)(?=.*[a-z0-9 ])(?=.*[A-Z0-9 ]){8,15}" title="Incluya 1Mayuscula 1Numero 1Caracterespecial" required><label for="" class="form_label">Confirma tu Contraseña</label>
+                <input type="email" class="form_input" required maxlength="35" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,35}$"><label for="" class="form_label">Ingresa tu Correo</label>
+                <input type="email" class="form_input" required maxlength="35" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,35}$"><label for="" class="form_label">Confima tu correo</label>
+                <input type="tel" class="form_input" required maxlength="11" pattern="[0-9]{4,11}" ><label for="" class="form_label">Ingresa tu Numero de Teléfono</label>
+                <input type="text" class="form_input" required maxlength="10" pattern="[a-zA-Z0-9 ]{2,10}"><label for="" class="form_label">¿Pais?</label>
+                <p class="col"><input type="checkbox" class="check" required/> Acepto terminos y condiciones</p>
+                <p class="right_content"><button class="button" type="submit">Enviar</button></p>
+        </form>
+    </section>
+    <script src="../_js/form.js"></script>
+</body>
+</html>
